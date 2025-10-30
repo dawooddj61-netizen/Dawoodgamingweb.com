@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <body>
+    <!-- 🌟 Gaming Banner Section Start -->
+    <div class="banner">
+      <div class="banner-overlay">
+        <h1 class="banner-title"> Dawood Gaming Hub</h1>
+        <p class="banner-subtitle">Explore • Download • Play • Enjoy</p>
+      </div>
+    </div>
+    <!-- 🌟 Gaming Banner Section End -->
+  
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>A to Z Gaming Hub</title>
+<style>.banner {
+  background: url('./assets/banner-bg.jpg') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+}
+
+.banner-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.banner-title {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.banner-subtitle {
+  font-size: 1.3em;
+  color: #fddb2d;
+}
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  header {
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  }
+
+  h1 {
+    font-size: 28px;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 25px #00ffff;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    color: #fff;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+  }
+
+  .search-bar {
+    margin: 25px auto;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 60%;
+    max-width: 400px;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    box-shadow: 0 0 10px #00ffff;
+  }
+
+  .games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .game-card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: 0.3s;
+  }
+
+  .game-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px #00ffff;
+  }
+
+  .game-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .game-card h2 {
+    margin: 10px 0;
+    color: #00ffff;
+  }
+
+  button {
+    background: #00ffff;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00ffff;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #00ffff, 0 0 60px #00ffff;
+  }
+
+  .comment-section {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .comment-section h2 {
+    color: #00ffff;
+    margin-bottom: 10px;
+  }
+
+  .comment-form input[type="text"],
+  .comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px 0;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    box-shadow: 0 0 10px #00ffff;
+    resize: none;
+  }
+
+  .comment-form button {
+    background: #00ffff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00ffff;
+    transition: 0.3s;
+  }
+
+  .comment-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #00ffff, 0 0 60px #00ffff;
+  }
+
+  .comments-display {
+    margin-top: 20px;
+    text-align: left;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .comment-box {
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px #00ffff;
+  }
+
+  .comment-box p {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .comment-box .username {
+    font-weight: bold;
+    color: #00ffff;
+  }
+
+  .login-popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .login-popup .popup-content {
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 10px #00ffff;
+  }
+
+  .login-popup .popup-content input, .login-popup .popup-content button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    box-shadow: 0 0 10px #00ffff;
+  }
+
+  .login-popup .popup-content button {
+    background: #00ffff;
+    color: black;
+    font-weight: bold;
+  }
+
+  .login-popup .popup-content button:hover {
+    background: #00e5ff;
+  }
+
+  footer {
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Dawood Gaming Hub</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#" onclick="openLoginPopup()">Login</a>
+    <a href="#">Terms</a>
+  </nav>
+</header>
+
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="🔍 Search your favorite game...">
+</div>
+
+<section class="games-container" id="gamesContainer">
+  <div class="game-card" onclick="openGame('gta5')">
+    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="GTA 5">
+    <h2>GTA 5</h2><p>Action / Open World</p><button>Download</button>
+  </div>
+  <div class="game-card" data-title="Cricket 24">
+    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2195250/header.jpg" alt="Cricket 24">
+    <h2>Cricket 24</h2><p>Sports / Multiplayer</p><button>Download</button>
+  </div>
+  <div class="game-card" data-title="Red Dead Redemption 2">
+    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg" alt="Red Dead Redemption 2">
+    <h2>Red Dead Redemption 2</h2><p>Adventure / Story</p><button>Download</button>
+  </div>
+  <div class="game-card" data-title="Call of Duty">
+    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/header.jpg" alt="Call of Duty">
+    <h2>Call of Duty</h2><p>FPS / Action</p><button>Download</button>
+  </div>
+  <div class="game-card" data-title="Minecraft">
+    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="Minecraft">
+    <h2>Minecraft</h2><p>Sandbox / Survival</p><button>Download</button>
+  </div>
+  <div class="game-card" data-title="Fortnite">
+    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1521410/header.jpg" alt="Fortnite">
+    <h2>Fortnite</h2><p>Battle Royale</p><button>Download</button>
+  </div>
+  <div class="game-card" data-title="PUBG">
+    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg" alt="PUBG">
+    <h2>PUBG</h2><p>Battle Royale</p><button>Download</button>
+  </div>
+  <div class="game-card" data-title="The Witcher 3">
+    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg" alt="The Witcher 3">
+    <h2>The Witcher 3</h2><p>RPG / Open World</p><button>Download</button>
+  </div>
+  <div class="game-card" data-title="Assassin's Creed Valhalla">
+    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/812140/header.jpg" alt="Assassin's Creed Valhalla">
+    <h2>Assassin's Creed Valhalla</h2><p>Action / RPG</p><button>Download</button>
+  </div>
+  <div class="game-card" data-title="Cyberpunk 2077">
+    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg" alt="Cyberpunk 2077">
+    <h2>Cyberpunk 2077</h2><p>Action / Sci-Fi</p><button>Download</button>
+  </div>
+</section>
+
+<div class="comment-section">
+  <h2> Leave a Comment</h2>
+  <div class="comment-form">
+    <input type="text" id="username" placeholder="Your name...">
+    <textarea id="comment" placeholder="Write your comment..." rows="4"></textarea>
+    <button id="submitComment">Submit</button>
+  </div>
+  <div class="comments-display" id="commentsDisplay"></div>
+</div>
+
+<div class="login-popup" id="loginPopup">
+  <div class="popup-content">
+    <h2>Login</h2>
+    <input type="text" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <button onclick="closeLoginPopup()">Close</button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Dawood Gaming Hub | All Rights Reserved</p>
+</footer>
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const cards = document.querySelectorAll('.game-card');
+  const submitComment = document.getElementById('submitComment');
+  const commentsDisplay = document.getElementById('commentsDisplay');
+
+  searchInput.addEventListener('input', () => {
+    const filter = searchInput.value.toLowerCase();
+    cards.forEach(card => {
+      const title = card.getAttribute('data-title').toLowerCase();
+      card.style.display = title.includes(filter) ? '' : 'none';
+    });
+  });
+
+  submitComment.addEventListener('click', () => {
+    const username = document.getElementById('username').value;
+    const comment = document.getElementById('comment').value;
+    if (username && comment) {
+      const commentBox = document.createElement('div');
+      commentBox.classList.add('comment-box');
+      commentBox.innerHTML = `<p><span class="username">${username}:</span> ${comment}</p>`;
+      commentsDisplay.appendChild(commentBox);
+      document.getElementById('username').value = '';
+      document.getElementById('comment').value = '';
+    } else {
+      alert('Please fill out both fields.');
+    }
+  });
+
+  function openLoginPopup() {
+    document.getElementById('loginPopup').style.display = 'flex';
+  }
+
+  function closeLoginPopup() {
+    document.getElementById('loginPopup').style.display = 'none';
+  }
+
+  function login() {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    if (email && password) {
+      alert('Login Successful');
+      closeLoginPopup();
+    } else {
+      alert('Please enter both email and password.');
+    }
+  }
+</script>
+  <!-- Put this at the very end of index.html, just before </body> -->
+  <script>
+    // quick inline openGame (works immediately)
+    function openGame(gameName) {
+      // navigate to games/<gameName>.html
+      window.location.href = `games/${gameName}.html`;
+    }
+
+    // optional: diagnostic log
+    console.log('openGame function registered');
+  </script>
+</body>  <!-- at the bottom of index.html, just before </body> -->
+<script src="script.js"></script>
+</body>
+</html>
+
+</html>
+
+</body>
+</html>

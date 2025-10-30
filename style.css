@@ -1,0 +1,281 @@
+/* 🌌 DAWOOD GAMING HUB - FINAL PREMIUM EDITION */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top left, #1a2a6c, #b21f1f, #fdbb2d);
+  background-size: 300% 300%;
+  animation: auroraFlow 15s ease infinite;
+  overflow-x: hidden;
+  color: #fff;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* 🔥 Moving Aurora Gradient Animation */
+@keyframes auroraFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ✨ Glowing Floating Particles */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-radial-gradient(circle, rgba(255,255,255,0.07) 0, rgba(255,255,255,0.07) 1px, transparent 1px, transparent 100px);
+  animation: stars 25s linear infinite;
+  z-index: 0;
+}
+
+@keyframes stars {
+  from { transform: translateY(0); }
+  to { transform: translateY(-1000px); }
+}
+
+/* 🔮 Header */
+header {
+  text-align: center;
+  font-size: 3.2rem;
+  padding: 30px 0;
+  text-shadow: 0 0 30px #00f2ff, 0 0 50px #ff0099;
+  animation: glowHeader 3s ease-in-out infinite alternate;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes glowHeader {
+  0% { text-shadow: 0 0 15px #00f2ff; }
+  100% { text-shadow: 0 0 40px #ff0099, 0 0 80px #00f2ff; }
+}
+
+/* 🧱 Games Grid */
+.games-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  padding: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+/* 🎮 Game Card */
+.game-card {
+  background: rgba(255,255,255,0.08);
+  border: 2px solid rgba(255,255,255,0.15);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  transition: transform 0.4s, box-shadow 0.4s;
+  backdrop-filter: blur(12px);
+}
+
+.game-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 0 35px #00f2ff, 0 0 55px #ff0099;
+}
+
+.game-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.game-card:hover img {
+  transform: scale(1.1);
+}
+
+.game-card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.download-btn {
+  background: linear-gradient(90deg, #ff0099, #00f2ff);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.download-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #00f2ff, 0 0 40px #ff0099;
+}
+
+/* 🎮 MASTER-LEVEL COMMENT SECTION */
+.comments {
+  margin-top: 60px;
+  background: linear-gradient(145deg, rgba(0,15,40,0.9), rgba(0,30,60,0.9));
+  border: 2px solid rgba(0,255,255,0.2);
+  border-radius: 20px;
+  padding: 35px 25px;
+  box-shadow: 0 0 25px rgba(0,255,255,0.2);
+  backdrop-filter: blur(8px);
+}
+
+.comments h2 {
+  text-align: center;
+  color: #00ffff;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  text-shadow: 0 0 10px #00e5ff;
+  font-weight: 700;
+}
+
+/* 💬 Form */
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 12px;
+  color: #e0f7fa;
+  padding: 12px 15px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  outline: none;
+  resize: none;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  background: rgba(0, 255, 255, 0.08);
+  border-color: #00e5ff;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.5);
+}
+
+.comment-form textarea {
+  min-height: 120px;
+}
+
+/* 🖲 Button */
+.comment-form button {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #00e5ff, #0099cc);
+  color: #000;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.comment-form button:hover {
+  background: linear-gradient(135deg, #00ffff, #00bcd4);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+/* 🧱 Comments Display */
+.comment-list {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(0,255,255,0.2);
+  border-radius: 15px;
+  padding: 15px;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.comment-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00e5ff, #004466);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000;
+  box-shadow: 0 0 10px rgba(0,255,255,0.5);
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.comment-content strong {
+  color: #00e5ff;
+  font-size: 1rem;
+}
+
+.comment-content p {
+  margin-top: 5px;
+  color: #cfefff;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* ✨ Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  .comment-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .comment-form button {
+    align-self: stretch;
+  }
+}
+
+
+/* 🌈 Footer */
+footer {
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+  color: white;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px #00f2ff;
+  position: relative;
+  z-index: 1;
+}
